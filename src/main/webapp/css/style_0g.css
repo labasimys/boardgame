@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+.page-main{
+	width:1000px;
+	margin: 0 auto;
+	margin-top:40px;
+}
+.main-title{
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+   /*  border-bottom:solid 0.5px; */
+    padding-bottom:40px;
+}
+.main-menu00{
+	display: inline-block;
+	width: 1000px;
+	display:flex;
+	justify-content: space-between;
+	margin-top:80px;
+}
+.main-menu01{
+	display: inline-block;
+	width: 1000px;
+	display:flex;
+	justify-content: space-between;
+}
+.main-content{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+#btn00{
+	width: 300px;
+    height: 350px;
+    border-radius: 0;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 3px 3px rgb(73, 73, 73);
+    font-size: 30px;
+    cursor: pointer;
+    margin-left:10px;
+    margin-right:10px;
+}
+#btn00:hover{
+	background: #8aa1a1;;
+	color: #fff;
+}
+#btn01{
+	width: 300px;
+    height: 30px;
+    border-radius: 0;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 3px 3px rgb(73, 73, 73);
+    font-size: 17px;
+    cursor: pointer;
+    margin-left:10px;
+    margin-right:10px;
+}
+#btn01:hover{
+	background: #8aa1a1;;
+	color: #fff;
+}
+#btn02{
+	width: 300px;
+    height: 30px;
+    border-radius: 0;
+    background: #8aa1a1;;
+    border: 1px solid #000;
+    box-shadow: 3px 3px rgb(73, 73, 73);
+    font-size: 17px;
+    cursor: pointer;
+    margin-left:10px;
+    margin-right:10px;
+    color: #fff;
+}
+#title-count{
+	display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:10px;
+    align-items:flex-end;
+}
+#title{
+	font-size:22px;
+	margin-left:8px;
+	margin-bottom:10px;
+}
+#title2{
+	font-size:22px;
+	margin-left:8px;
+	margin-bottom:25px;
+	margin-top: 100px;
+}
+#count{
+	float: right;
+	font-size:14px;
+	margin-right:5px;
+}
+#paging{
+	display:flex;
+	justify-content:center;
+	margin-top:10px;
+}
+#a01{
+	text-decoration: none;
+	color:black;
+}
+#paging a:link{
+	text-decoration: none;
+	color: black;
+}
+#paging a:hover{
+	text-decoration: none;
+}
+#paging a:visited{
+	text-decoration: none;
+	color: black;
+}
+/*admin_reslist.jsp*/
+ul{
+	list-style: none;
+}
+.main_ul{
+	cursor: pointer;
+	border-bottom: 1px solid #c7c7c7;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:30px;
+	font-size:17px;
+}
+.main_ul:hover{
+	color:#8e8e8e;
+}
+.main_ul:visited{
+	color:#fff;
+}
+.hide{
+	display: none;
+	color:#000;
+}
+.hide > label{
+	width: 85px;
+}
+/*admin_memdetail*/
+ul li{
+	margin-bottom:5px;
+}
+ul li label{
+	width: 90px;
+	float: left;
+}
+ul li input{
+	width: 200px;
+	height: 20px;
+}
+input[id="auth"]{
+	width:135px;
+}
+select[name="mem_auth"]{
+	width: 143px;
+	height: 25px;
+	margin-left:21px;
+	border: solid 1.5px #000;
+	font-size:16px;
+}
+#update_auth{
+	width:57px;
+	margin-left:0px;
+	height:25px;
+}
+#submit_auth{
+	width:57px;
+	margin-left:0px;
+	height:25px;
+}
+.memdet_ul{
+	margin-top:40px;
+	/* padding-left:80px; */
+	font-size:17px;
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+}
+.memdet_ul li{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.memdet_ul li label{
+	width:140px;
+}
+.memdet_ul li input{
+	margin-left:22px;
+    border: solid 1.5px #000;
+    padding-left: 5px;
+    font-size:16px;
+    height:22px;
+}
+.buttons{
+	margin-top:40px;
+	margin-bottom:40px;
+	display:flex;
+	justify-content: center;
+}
+.buttons input[type="button"]{
+	width: 90px;
+    height: 25px;
+    border-radius: 0;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 3px 3px rgb(73, 73, 73);
+    font-size: 14px;
+    cursor: pointer;
+    margin-left:15px;
+    margin-right:10px;
+}
+.buttons input[type="submit"]{
+	width: 90px;
+    height: 25px;
+    border-radius: 0;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 3px 3px rgb(73, 73, 73);
+    font-size: 14px;
+    cursor: pointer;
+    margin-left:0px;
+    margin-right:10px;
+}
+
+/*admin_orderdetail.jsp*/
+.order_form{
+	border-top:solid 1px #000;
+	border-bottom:solid 1px #000;
+	margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 60px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+#total_td{
+	border-top: 1px solid #000;
+}
+#order_ul li label{
+	width:120px;
+}
+#order_ul li{
+	margin-bottom: 13px;
+}
+form[id="order_form"] input{
+	width:25px;
+	height:15px;
+	margin-left:10px;
+}
+#status00{
+	margin-left:0px;
+}
+#upstatus_input{
+	display:flex;
+	align-items:center;
+}
+.buttons01{
+	margin-top:75px;
+	display:flex;
+	justify-content: center;
+}
+.buttons01 input[type="button"]{
+	width: 90px;
+    height: 25px;
+    border-radius: 0;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 3px 3px rgb(73, 73, 73);
+    font-size: 14px;
+    cursor: pointer;
+    margin-left:15px;
+    margin-right:10px;
+}
+.buttons01 input[type="submit"]{
+	width: 90px;
+    height: 25px;
+    border-radius: 0;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 3px 3px rgb(73, 73, 73);
+    font-size: 14px;
+    cursor: pointer;
+    margin-left:0px;
+    margin-right:10px;
+}
+/*테이블*/
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+table td{
+	padding: 13px 0;
+	text-align: center;
+	font-size: 15px;
+}
+.th{
+	border-bottom: 1px solid #000;
+}
+.th th{
+	font-size: 16px;
+    padding: 15px 0;
+}
+.td{
+	border-bottom: 1px solid #c7c7c7;
+}
+.td td{
+	padding: 13px 0;
+    text-align: center;
+    font-size: 15px;
+}

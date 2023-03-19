@@ -1,0 +1,587 @@
+/* 공통
+------------------- */
+.result-display-x {
+	height: 300px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 40px;
+	border: 1px solid #000;
+	display: flex;
+	align-items: center; /*세로 정렬*/
+	justify-content: center; /*가로 정렬*/
+}
+
+ul {
+	list-style: none;
+}
+.page-main h2{
+	font-size: 30px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+.align-right{
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.btn{
+	width: 100px;
+	height: 25px;
+	border-radius: 0;
+	background: #fff;
+	border: 1px solid #000;
+	box-shadow: 3px 3px rgb(73, 73, 73);
+	font-size: 15px;
+	cursor: pointer;
+}
+ins{
+	color:black;
+}
+ins:link{
+	text-decoration: none;
+	color: #000;
+}
+ins:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+ins:hover{
+	text-decoration: none;
+	color: #000;
+	transition: 0.5s;
+}
+/* MY페이지
+------------------- */
+.page-main{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	min-height: 50vh;
+}
+
+.mypage-div {
+	padding: 0px;
+}
+
+.my-photo {
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+	box-shadow: 3px 3px 3px black;
+}
+
+.bluebtn {
+	background: #fff;
+	cursor: pointer;
+	border: 1px solid #000;
+	padding:5px;
+	box-shadow: 3px 3px 3px rgb(73 73 73);
+}
+.bluebtn-mypage {
+	cursor: pointer;
+	margin-left:25px;
+	padding:5px;
+	background: #fff;
+  	border: 1px solid #000;
+  	box-shadow: 3px 3px rgb(73, 73, 73);
+}
+.redbtn {
+	background: #fff;
+	border: 1px solid #000;
+	cursor: pointer;
+	margin:30px;
+	padding:5px;
+	box-shadow: 3px 3px 3px rgb(73 73 73);
+}
+
+#myname {
+	font-size: 2em;
+	margin-block-start: 0px;
+	margin-block-end: 5px;
+	margin-left:20px;
+}
+
+#div01 {
+	float: left;
+	width: 49%;
+	text-align: right;
+}
+
+#div02 {
+	float: right;
+	width: 48%;
+	display: flex;
+}
+
+.float-end {
+	clear: both;
+}
+
+.allbox1 {
+	width: 100%;
+	height: 350px;
+	margin-left: 0px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom:2px solid lightgrey;
+}
+
+.allbox2 {
+	margin: auto;
+}
+
+.mypage-inline-block ul li {
+	display: inline-block;
+}
+
+.mypageblock01 {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+#mypage01 {
+	border: 2px solid black;
+	width: 150px;
+	height: 150px;
+	margin-right: 20px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px rgb(73 73 73);
+}
+
+#mypage02 {
+	border: 2px solid black;
+	width: 150px;
+	height: 150px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px rgb(73 73 73);
+}
+
+.mypage-line1-a {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+.redfont {
+	color: red;
+	font-size: 30px;
+}
+
+.bluefont {
+	color: blue;
+	font-size: 30px;
+}
+
+.mypageblock02 {
+	display: flex;
+	justify-content: center;
+}
+
+#mypageul {
+	padding: 0px;
+}
+
+.mypage-line2 {
+	border: 2px solid black;
+	width: 500px;
+	height: 50px;
+	margin-bottom: 20px;
+	display:flex;
+	align-items:center;
+	padding-left:15px;
+	box-shadow: 3px 3px 3px rgb(73 73 73);
+}
+
+.Withdrawal {
+	float: right;
+}
+
+/* 회원정보 수정 */
+.allbox1-modify {
+	width: 100%;
+	height: 350px;
+	margin-left: 50px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#div01-modify {
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+
+#div02-modify {
+	float: left;
+	width: 400px;
+	display: flex;
+}
+.submit-reset-btn{
+	padding-right:84px;	
+}
+.modify-profile{
+	width:300px;
+}
+
+/* .modify-profile label{
+	width: 100px;
+	height: 25px;
+	margin-top: 10px;
+	border-radius: 0;
+	background: #fff;
+	border: 1px solid #000;
+	box-shadow: 3px 3px rgb(73, 73, 73);
+	font-size: 15px;
+	cursor: pointer;
+	vertical-align: middle;
+	float:left;
+} */
+.float-end {
+	clear: both;
+}
+
+.passwd-change-btn {
+	float: right;
+	margin-right:75px;
+	margin-bottom:40px;
+}
+
+#modify_form {
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#modify_form ul li {
+	margin-bottom: 10px;
+}
+.modify_form-list{
+	padding-left:135px;
+}
+#phone{
+	margin-left:64px;
+}
+#email{
+	margin-left:80px;
+}
+#zipcode{
+	margin-left:63px;
+	width:80px;
+}
+#address1{
+	margin-left:96px;
+}
+#address2{
+	margin-left:58px;
+}
+.bluebtn-modify {
+    width: 450px;
+    height: 35px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px grey;
+    background: black;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    margin-top:20px;
+}
+.btn-zipcode{
+	width: 100px;
+	height: 16px;
+	border-radius: 0;
+	background: #fff;
+	border: 1px solid #000;
+	box-shadow: 3px 3px rgb(73, 73, 73);
+	font-size: 12px;
+	cursor: pointer;
+}
+/* 비밀번호 수정  */ /* 사진, 백그라운드-칼라 -> 회원삭제 거 가져옴  */
+#password_form {
+	width: 600px;
+	margin: 0 auto;
+}		
+.modifypw_form-list{
+	padding-left:140px;
+}
+.modifypw_form-list li{
+	margin-top:7px;
+}
+.redbtn-modify {
+	width: 400px;
+	height: 40px;
+	background: black;
+	box-shadow: 3px 3px 3px black;
+	color: white;
+	box-shadow: 3px 3px grey;
+	cursor: pointer;
+	margin-top:20px;
+}
+#origin_passwd{
+	margin-left:20px;
+}
+#passwd2{
+  	margin-left: 44px;
+}
+#cpasswd2{
+	margin-left: 4px;
+}
+.helpbox-pw {
+	float: right;
+	margin-top: 10px;
+	margin-right: 100px;
+	margin-bottom: 40px;
+}
+
+/* 내가 쓴 문의 */
+.inqutable-1 {
+	width: 100px;
+}
+.inqutable-2 {
+	width: 150px;
+}
+.inqutable-3 {
+	width: 400px;
+}
+.inqutable-4 {
+	width: 150px;
+}
+
+/* 예약 내역 */
+.restable-1 {
+	width: 150px;
+}
+
+.restable-2 {
+	width: 100px;
+}
+
+.restable-4 {
+	width: 150px;
+}
+
+.restable-5 {
+	width: 100px;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.todayreserve {
+	border: 4px solid black;
+	margin: 10px;
+}
+
+.todayreserve-imgbox {
+	text-align: center;
+}
+
+.todayreserve-imgbox img {
+	margin: 10px;
+}
+
+.todayreserve-detailbox {
+	text-align: center;
+	border: 1px solid black;
+	margin: 30px;
+}
+
+.todayreserve-detailbox b {
+	font-size: 20px;
+}
+
+
+.redfont-reserve {
+	color: red;
+	font-size: 30px;
+}
+/* 내가 쓴 리뷰 */
+.myreview-1-size{
+	width:50px;
+}
+.myreview-2-size{
+	width:200px;
+}
+.myreview-3-size{
+	width:500px;
+}
+/* 내 구매목록 */
+.myorder-6-size{
+	width:200px;
+}
+/* 회원탈퇴 */
+.redbtn-delete {
+	width: 400px;
+	height: 40px;
+	background: #bb2d3b;
+	box-shadow: 3px 3px 3px black;
+	color: white;
+	border-style: none;
+	cursor: pointer;
+	margin-left:17%;
+	margin-top:20px;
+}
+
+.helpbox {
+	float: right;
+	margin-top: 10px;
+	margin-right: 100px;
+	margin-bottom: 40px;
+}
+
+.photo-box-delete {
+	width: 100%;
+	height: 350px;
+	margin-bottom: 50px;
+	display:flex;
+	border-bottom:2px solid lightgrey;
+}
+.photo-box-delete-a {
+	width:200px;
+	margin:auto;
+}
+#delete_form {
+	width:	 600px;
+	margin: 0 auto;
+	padding: 10px 10px 10px 30px;
+}
+
+#delete_form ul li {
+	margin-bottom: 10px;
+	margin-left:26%;
+}
+#passwd{
+	margin-left:39px;
+}
+.bluebtn-realdelete {
+    width: 450px;
+    height: 35px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px grey;
+    background: black;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* 테이블 */
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table td{
+	padding: 10px 0;
+	text-align: center;
+	font-size: 15px;
+}
+
+table a:link{
+	text-decoration: none;
+	color: #000;
+}
+
+table a:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+table a:hover{
+	text-decoration: none;
+	color: #c6c6c6;
+	transition: 0.5s;
+}
+
+.border-bot{
+	border-bottom: 1px solid #000;
+}
+
+.border-bot th{
+	font-size: 16px;
+	padding: 15px 0;
+}
+
+.table-content-bot{
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.table-content-bot:last-child{
+	border-bottom: 0px;
+}
+.align-center{
+	text-align: center;
+}
+/* 페이지 */
+.paging{
+	margin-top: 10px;
+}
+
+.paging a:link{
+	text-decoration: none;
+	color: #000;
+}
+
+.paging a:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+.paging a:hover{
+	text-decoration: none;
+	transition: 0.5s;
+}
+.pageup {
+	height: 50px;
+}
+
+.pagebottom {
+	height: 150px;
+}
+
+/* 파일 선택 버튼 */
+.filebox{
+	margin-left:50px;
+}
+.filebox input[type="file"]{
+	position: absolute;
+	width: 0;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+}
+
+.filebox label{
+	width: 100px;
+	height: 25px;
+	margin-top: 10px;
+	border-radius: 0;
+	background: #fff;
+	border: 1px solid #000;
+	box-shadow: 3px 3px rgb(73, 73, 73);
+	font-size: 15px;
+	cursor: pointer;
+	float: left;
+    padding-top: 8px;
+    margin-left: 20px;
+}
+
+.filebox .filename{
+	display: inline-block;
+	height: 40px;
+	padding-top: 5px;
+	vertical-align: middle;
+	border: none;
+	margin-left: 10px;
+	background: rgba(0, 0, 0, 0);
+}
+
+.filename:focus{
+	outline: none;
+}

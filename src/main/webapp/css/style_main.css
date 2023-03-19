@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+@font-face {
+	src: url("../fonts/DungGeunMo.ttf");
+	font-family: "DungGeunMo";
+}
+
+*{
+	font-family: "DungGeunMo";
+	margin: 0;
+	padding: 0;
+}
+
+/* main */
+.main-body{
+	-ms-overflow-style: none;
+	background: #000;
+	font-size: 50px;	
+	text-shadow: 4px 3px 0px #adac72;
+}
+
+.main-body a:link{
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-body a:visited{
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-body a:hover{
+	text-decoration: none;
+	color: #b3b007;
+	text-shadow: 4px 3px 0px #78772f;
+	transition: 0.5s;
+}
+
+/*스크롤바 없애기*/
+::-webkit-scrollbar{
+	display:none;
+}
+
+.container{
+	display: flex;
+	height: 100vh;
+}
+
+.main-logo{
+	position: relative;
+	background: #000;
+	flex: 1;
+}
+
+.main-logoBox{
+	width: 120px;
+	height: 120px;
+	background-image: url(../images/hyem/logo_background.png);
+	position: absolute;
+	top: 100px;
+	right: 60px;
+}
+
+.main-background{
+	position: relative;
+	background: #000;
+	flex: 1;
+}
+
+@media (max-height:686.0px){
+	.main-background img{
+		min-height: 600px;
+	}
+	
+	.start{
+		position: absolute;
+		width: 100%;
+		top: 25%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (min-height:686.1px){
+	.main-background img{
+		height: 100vh;
+	}
+	
+	.start{
+		position: absolute;
+		width: 100%;
+		top: 25%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.start-a{
+	width: 40%;
+	text-align: center;
+}
+
+.start-a a:nth-child(1){
+	font-size: 80px;
+}
+
+.main-menu{
+	background: #000;
+	flex: 1;
+	padding-left: 60px;
+	padding-top: 100px;	
+}
+
+.main-menu ul{
+	list-style: none;
+}
+
+.main-menu ul li{
+	margin-bottom: 50px;
+}
+
+/* header */
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgba(80, 80, 80, 0.5);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #FFF;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 18px;
+	}
+		
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+
+.header{
+	display: flex;
+	height: 120px;
+	width: 100%;
+	
+	/* 헤더 상단 고정 */
+	position: sticky;
+	top: 0;
+	background: #fff;
+	border-bottom: 1px solid #000;
+	z-index: 1;
+}
+
+.menubar{
+	flex-basis: 300px;
+}
+
+.menubar img{
+	margin-top: 25px;
+	margin-left: 35px;
+	cursor: pointer;
+}
+
+.header-logo{
+	flex: 1;
+	text-align: center;
+}
+
+.login-part{
+	flex-basis: 300px;
+ 	font-size: 20px;
+ 	display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #000;
+}
+
+.login-part a:last-child{
+	margin-right: 20px;
+}
+
+.login-part a:link{
+	text-decoration: none;
+	color: #000;
+}
+
+.login-part a:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+.login-part a:hover{
+	text-decoration: none;
+	color: #6C6C6C;	
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+/* footer */
+.footer{
+    height: 210px;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(255 255 255), rgb(214 244 255));
+    color: #585858;
+    margin-top: 105px;
+}
+
+.footer-content{
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 110px;
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.footer-content1{
+	line-height: 25px;
+	flex: 2;
+	margin-left: 20px;
+}
+
+.footer-content2{
+	line-height: 25px;
+	flex: 1;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.footer-content2 p{
+	font-style: italic;
+	font-size: 25px;
+}
+
+.footer-img{
+	background-image: url(../images/hyem/footerImg.png);
+	background-repeat: repeat-x;
+	height: 100px;
+}

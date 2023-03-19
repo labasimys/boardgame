@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* 전체 레이아웃
+---------------------------------*/
+@font-face {
+      src: url("../fonts/DungGeunMo.ttf");
+      font-family: "DungGeunMo";
+}
+*{
+	font-family: "DungGeunMo";
+	margin: 0px;
+	padding: 0px;
+}
+.page-main{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	min-height: 50vh;
+}
+.page-main h2{
+	font-size: 30px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.hr-bottom{
+	margin: 60px 0 60px 0;
+}
+
+/* modal */
+#modal.modal-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(1.5px);
+}
+      
+#modal .modal-window {
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 5px 5px rgb(73, 73, 73);
+	backdrop-filter: blur(13.5px);
+	border: 1px solid #000;
+	width: 300px;
+	position: relative;
+	top: -100px;
+	padding: 10px;
+	text-align: center;
+}
+        
+#modal .modal-content {
+	margin-top: 30px;
+	padding: 0px 10px;
+	color: #000;
+}
+        
+#modal .confirm-btn{
+	margin: 30px 0;
+}
+
+
+a:link{
+	text-decoration:none;
+	color:#000000;
+}
+a:visited{
+	text-decoration:none;
+	color:#000000;
+}
+a:hover{
+	text-decoration:none;
+	color:#6C6C6C;
+}
+
+/* 공통 정렬
+-------------------------------*/
+.align-center{
+	text-align:center;
+}
+.align-right{
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+/* 주문페이지 form, table  */
+form[id="order_form"]{
+	border:none;
+}
+form{
+	margin:0 auto;
+	border:1px solid #000;
+}
+form ul li{
+	margin:0 auto;
+	width:520px;
+}
+form ul li label{
+	width:200px;
+	float:left; /* 태그를 왼쪽으로 정렬 */
+}
+#order_form li{
+	margin: 7px auto;
+}
+ul{
+	list-style:none;
+	margin-bottom: 30px;
+}
+input{
+	margin-top:4px;
+}
+input[type="text"]{
+	width:310px;
+}
+input[id="zipcode"]{
+	width:200px;
+}
+/* 주문 상세 페이지 결제, 배송 상태 */
+.payment-status ul li{
+	text-align: center;
+}
+
+/* 테이블 */
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table td{
+	padding: 10px 0;
+	text-align: center;
+	font-size: 15px;
+}
+
+table a:link{
+	text-decoration: none;
+	color: #000;
+}
+
+table a:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+table a:hover{
+	text-decoration: none;
+	color: #c6c6c6;
+	transition: 0.5s;
+}
+
+.border-bot{
+	border-bottom: 1px solid #000;
+}
+
+.border-bot th{
+	font-size: 16px;
+	padding: 15px 0;
+}
+
+.table-content-bot{
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.table-content-bot:last-child{
+	border-bottom: 0px;
+}
+
+/* 버튼 */
+.btn{
+   width: 100px;
+   height: 25px;
+   border-radius: 0;
+   background: #fff;
+   border: 1px solid #000;
+   box-shadow: 3px 3px rgb(73, 73, 73);
+   font-size: 15px;
+   cursor: pointer;
+}
+
